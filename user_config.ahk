@@ -16,7 +16,7 @@
 ; !n::switchDesktopToRight()             <- <Alt> + <N> will switch to the next desktop (to the right of the current one)
 ; #!space::switchDesktopToRight()        <- <Win> + <Alt> + <Space> will switch to next desktop
 ; CapsLock & n::switchDesktopToRight()   <- <CapsLock> + <N> will switch to the next desktop (& is necessary when using non-modifier key such as CapsLock)
-
+; %PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Startup  -> New -> Create Shortcut 
 ; ===========================
 ; === END OF INSTRUCTIONS ===
 ; ===========================
@@ -29,32 +29,32 @@ CapsLock & Up::PgUp
 CapsLock & Down::PgDn
 CapsLock & Backspace::Delete
 
-CapsLock & `::getCurrentDesktop()
+# & `::getCurrentDesktop()
 
-CapsLock & ]::MoveCurrentWindowToRightDesktop()
-CapsLock & [::MoveCurrentWindowToLeftDesktop()
+# & ]::MoveCurrentWindowToRightDesktop()
+# & [::MoveCurrentWindowToLeftDesktop()
 
-CapsLock & 1::switchDesktopByNumber(1)
-CapsLock & 2::switchDesktopByNumber(2)
-CapsLock & 3::switchDesktopByNumber(3)
-CapsLock & 4::switchDesktopByNumber(4)
-CapsLock & 5::switchDesktopByNumber(5)
-CapsLock & 6::switchDesktopByNumber(6)
-CapsLock & 7::switchDesktopByNumber(7)
-CapsLock & 8::switchDesktopByNumber(8)
-CapsLock & 9::switchDesktopByNumber(9)
-CapsLock & 0::switchDesktopByNumber(10)
+#1::switchDesktopByNumber(1)
+#2::switchDesktopByNumber(2)
+#3::switchDesktopByNumber(3)
+#4::switchDesktopByNumber(4)
+#5::switchDesktopByNumber(5)
+#6::switchDesktopByNumber(6)
+#7::switchDesktopByNumber(7)
+#8::switchDesktopByNumber(8)
+#9::switchDesktopByNumber(9)
+#0::switchDesktopByNumber(10)
 
-CapsLock & q::MoveCurrentWindowToDesktop(1)
-CapsLock & w::MoveCurrentWindowToDesktop(2)
-CapsLock & e::MoveCurrentWindowToDesktop(3)
-CapsLock & r::MoveCurrentWindowToDesktop(4)
-CapsLock & t::MoveCurrentWindowToDesktop(5)
-CapsLock & y::MoveCurrentWindowToDesktop(6)
-CapsLock & u::MoveCurrentWindowToDesktop(7)
-CapsLock & i::MoveCurrentWindowToDesktop(8)
-CapsLock & o::MoveCurrentWindowToDesktop(9)
-CapsLock & p::MoveCurrentWindowToDesktop(10)
+# & q::MoveCurrentWindowToDesktop(1)
+# & w::MoveCurrentWindowToDesktop(2)
+# & e::MoveCurrentWindowToDesktop(3)
+# & r::MoveCurrentWindowToDesktop(4)
+# & t::MoveCurrentWindowToDesktop(5)
+# & y::MoveCurrentWindowToDesktop(6)
+# & u::MoveCurrentWindowToDesktop(7)
+# & i::MoveCurrentWindowToDesktop(8)
+# & o::MoveCurrentWindowToDesktop(9)
+# & p::MoveCurrentWindowToDesktop(10)
 
 ; === INSTRUCTIONS ===
 ; Below is the alternate key configuration. Delete symbol ; in the beginning of the line to enable.
